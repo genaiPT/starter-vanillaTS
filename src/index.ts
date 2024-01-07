@@ -1,2 +1,1 @@
-console.log("ee")
-console.log("iii")
+console.log("write here")
