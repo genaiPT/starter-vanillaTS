@@ -12,5 +12,9 @@
   "exclude": ["src/**/*.ts", "node_modules"],
   "include": ["dist/**/*.js"],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+
+    "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
