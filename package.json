@@ -1,0 +1,16 @@
+{
+  "name": "ts-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc",
+    "dev":"tsc --watch"
+
+  },
+  "exclude": ["src/**/*.ts", "node_modules"],
+  "include": ["dist/**/*.js"],
+  "author": "",
+  "license": "ISC"
+}
