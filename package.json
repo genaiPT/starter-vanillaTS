@@ -5,12 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"tsc",
-    "dev":"tsc --watch"
+    "build": "tsc",
+    "tailwind":"tailwindcss -i src/tailwind.css -o src/styles.css --watch",
+    "dev": "npm run tailwind && tsc --watch"
 
   },
-  "exclude": ["src/**/*.ts", "node_modules"],
-  "include": ["dist/**/*.js"],
+  "exclude": [
+    "src/**/*.ts"
+  ],
+  "include": [
+    "dist/**/*.js"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  }
 }
+
