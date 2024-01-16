@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":"tsc",
-    "dev":"tsc --watch"
+    "dev":"tsc --watch",
+    "log":"node --watch dist/index.js"
 
   },
   "exclude": ["src/**/*.ts", "node_modules"],
