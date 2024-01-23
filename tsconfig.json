@@ -1,10 +1,11 @@
 {
-    "compilerOptions": {
-      "module": "ES2022",
-      "moduleResolution": "Node",
-      "target": "ES2020",
-      "sourceMap": true,
-      "outDir": "dist",
-    },
-    "include": ["src/**/*"],
-  }
+  "compilerOptions": {
+    "module": "ES2022", //ES2022 normal; CommonJS jest
+    "moduleResolution": "Node", 
+    "target": "ES5", //ES2020 normal; ES5 jest
+    "sourceMap": true,
+    "outDir": "dist",
+    "esModuleInterop": true //true para jest
+  },
+  "include": ["src/**/*"],
+}

@@ -4,18 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"tsc",
-    "dev":"tsc --watch",
-    "log":"node --watch dist/index.js"
-
+    "test": "jest --coverage jest --testPathPattern=stack.test.ts",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "log": "node --watch dist/index.js"
   },
-  "exclude": ["src/**/*.ts", "node_modules"],
-  "include": ["dist/**/*.js"],
+  "exclude": [
+    "src/**/*.ts",
+    "node_modules"
+  ],
+  "include": [
+    "dist/**/*.js"
+  ],
   "author": "",
   "license": "ISC",
-
-    "devDependencies": {
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
   }
 }
